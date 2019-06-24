@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "f3ca34eb-2eca-4cdf-9273-34c07238f9a9",
+		"name": "SALEM_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create existing  volonteer account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"pateuguia@gmail.com\",\n\t\"password\": \"pat\",\n\t\"firstName\":\"patrice\",\n\t\"lastName\":\"teug\",\n    \"role\": \"volunteer\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/salem/account/volunteer/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"salem",
+						"account",
+						"volunteer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create volonteer account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"pateuguia@yahoo.com\",\n\t\"password\": \"pat\",\n\t\"firstName\":\"patrice\",\n\t\"lastName\":\"teug\",\n    \"role\": \"volunteer\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/salem/account/volunteer/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"salem",
+						"account",
+						"volunteer",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login with account information",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"patrice@gmail.com\",\n\t\"password\": \"PatriceVolunteer\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/salem/account/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"salem",
+						"account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find all account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
